@@ -1,0 +1,202 @@
+/* plain background, no gradient */
+
+/*body {
+	margin: 0 auto;
+	max-width: 50%;
+	font-family: 'Letter Gothic Std', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	background-color: #FFFAFA;
+}*/
+
+body {
+	margin: 0 auto;
+	max-width: 50%;
+	font-family: 'Letter Gothic Std', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 17s ease infinite;
+	-moz-animation: Gradient 17s ease infinite;
+	animation: Gradient 17s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@font-face {
+        font-family: Letter Gothic Std;
+        src: url(css/LetterGothicStd-copy.otf);
+}
+
+h1 {
+	margin-top: 145px;
+	letter-spacing: 2px;
+	color: ;
+	font-family: 'Letter Gothic Std'; 
+}
+
+h2 {
+	letter-spacing: 0.5px;
+	margin-bottom: ;
+}
+	
+.mission {
+	margin: 0 auto;
+	max-width: 50%;
+	text-align: center;
+	letter-spacing: 0.5px;
+	font-family: 'Letter Gothic Std'; 
+}
+
+hr {
+	border: 0;
+    height: 0;
+    width: 40em;
+    /*border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+}	
+
+/* Social Icons */
+
+.social-icons li a {
+	
+}
+
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+	
+}
+.list-inline li {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: snow;
+    opacity: 0.7;
+
+}
+
+/* selected link */
+a:active {
+    color: snow;
+}
+
+/* footer */
+
+.trademark {
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.5px;
+}
+
+/* media queries */
+
+/* for small phones */
+
+  @media (max-width: 599px) { 
+  	body {
+  		font-size: 12px;
+  		max-width: 75%;
+  	}
+  	h1 {
+  		margin-top: 60px;
+  		margin-bottom: 30px;
+  		font-size: 15px;
+  	}	
+
+  	.mission {
+  		max-width: 75%;
+  	}
+  }
+
+/* for-tablet-portrait-up */
+
+  @media (min-width: 600px) {  
+  	body {
+  		max-width: 75%;
+  		margin-top: 150px;
+  	}
+
+  	h1 {
+  		margin-top: 60px;
+  	}
+
+  	.mission {
+  		max-width: 75%;
+  	}
+  }
+
+
+/* for-desktop-only */
+
+  @media (min-width: 1080px) and (max-width: 1920px) { 
+  	body {
+  		max-width: 50%;
+  	}
+
+  	.mission {
+	margin: 0 auto;
+	max-width: 50%;
+	text-align: center;
+	letter-spacing: 0.5px;
+	}
+
+	h1 {
+	margin-top: 145px;
+	}
+  }
+
